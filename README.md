@@ -45,3 +45,4 @@ Si todo ha ido bien, deberías ver la frase "Hola, mundo" en la consola.
 Los programas hechos para ejecutar en Node.js se lanzan con el comando `npm start`. Si te fijas en el archivo `package.json`, verás que hay una propiedad llamada `"scripts"`, donde ya hemos configurado el script `start`.
 
 Cada vez que quieras ejecutar tu programa, puedes lanzar el comando `npm start` desde la terminal. Esto se irá al script `start` del `package.json` y ejecutará el comando que haya configurado, que ahora mismo es `node .`
+# r1-user-validation
