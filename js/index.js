@@ -1,25 +1,28 @@
-// Datos del usuario
+// Datos del usuario:
 const userName = "arodrigue96";
 const password = "Qm%o*^lw@c82*h9ufea";
-const passwordCheck = "Qm%o*^lw@c82*h9ufea";
+const repeatedPassword = "Qm%o*^lw@c82*h9ufea";
 const userAge = 28;
 
-// Expresiones regulares utilizadas
+// Expresiones regulares utilizadas:
 const containUpperCase = /[A-Z]/;
 const containNumber = /[0-9]/;
 
-// Comprobación userName
-console.log(`El nombre de usuario es valido: ${userName.length >= 8}`);
+// Comprobación caracteres userName:
+const userCheck = userName.length >= 8;
 
-// Comprobación contraseña: NO SE COMO HACER ESTE PASO. He mirado en la página de Regex que pasaste y creo que son correctas pero no me funciona.
-console.log(
-  "La contraseña es válida:",
-  containUpperCase.test(password) && containNumber.test(password)
-);
+// Comprobación contraseña upperCase:
+const passwordUpperLetterCheck =
+  containUpperCase.test(password) && containNumber.test(password);
 
-// Comprobación contraseña igual que la primera
-console.log(
-  `La repetición de la contraseña es válida: ${password === passwordCheck}`
-);
-// Comprobación si es mayor de edad
-console.log("Es mayor de edad:", userAge >= 18);
+// Comprobación contraseña sea igual que la primera:
+const samePassword = password === repeatedPassword;
+
+// Comprobación si es mayor de edad:
+const isAdult = userAge >= 18;
+
+// Consola:
+console.log("El nombre de usuario es valido:", userCheck);
+console.log("La contraseña es válida:", passwordUpperLetterCheck);
+console.log("La repetición de la contraseña es válida:", samePassword);
+console.log("Es mayor de edad:", isAdult);
