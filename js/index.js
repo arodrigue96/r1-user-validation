@@ -1,11 +1,11 @@
 // Datos del usuario:
 const userName = "arodrigue96";
-const password = "Qm%o*^lw@c82*h9ufea";
-const repeatedPassword = "Qm%o*^lw@c82*h9ufea";
+const password = "Üuenjkldscja3";
+const repeatedPassword = "Üuenjkldscja3";
 const userAge = 28;
 
 // Expresiones regulares utilizadas:
-const containUpperCase = /[A-Z]/;
+const containUpperCase = /\p{Lu}+/u;
 const containNumber = /[0-9]/;
 
 // Comprobación caracteres userName:
