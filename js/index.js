@@ -9,11 +9,13 @@ const containUpperCase = /[A-Z]/;
 const containNumber = /[0-9]/;
 
 // Comprobación caracteres userName:
-const isValidUsername = userName.length >= 8;
+const isValidUsername = userName.length >= 5;
 
 // Comprobación contraseña:
 const isValidPassword =
-  containUpperCase.test(password) && containNumber.test(password);
+  password.length >= 8 &&
+  containUpperCase.test(password) &&
+  containNumber.test(password);
 
 // Comprobación contraseña sea igual que la primera:
 const isSamePassword = password === repeatedPassword;
